@@ -1,0 +1,73 @@
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /opt/bitnami/spark/.ivy2/cache
+The jars for the packages stored in: /opt/bitnami/spark/.ivy2/jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+org.postgresql#postgresql added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-8600ee64-685d-4200-a262-67b5287c2e5e;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.1.2 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.1.2 in central
+	found org.apache.kafka#kafka-clients;2.6.0 in central
+	found com.github.luben#zstd-jni;1.4.8-1 in central
+	found org.lz4#lz4-java;1.7.1 in central
+	found org.xerial.snappy#snappy-java;1.1.8.2 in central
+	found org.slf4j#slf4j-api;1.7.30 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+	found org.apache.commons#commons-pool2;2.6.2 in central
+	found org.postgresql#postgresql;42.3.1 in central
+	found org.checkerframework#checker-qual;3.5.0 in central
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.1.2/spark-sql-kafka-0-10_2.12-3.1.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-sql-kafka-0-10_2.12;3.1.2!spark-sql-kafka-0-10_2.12.jar (284ms)
+downloading https://repo1.maven.org/maven2/org/postgresql/postgresql/42.3.1/postgresql-42.3.1.jar ...
+	[SUCCESSFUL ] org.postgresql#postgresql;42.3.1!postgresql.jar (432ms)
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-token-provider-kafka-0-10_2.12/3.1.2/spark-token-provider-kafka-0-10_2.12-3.1.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.1.2!spark-token-provider-kafka-0-10_2.12.jar (134ms)
+downloading https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.6.0/kafka-clients-2.6.0.jar ...
+	[SUCCESSFUL ] org.apache.kafka#kafka-clients;2.6.0!kafka-clients.jar (862ms)
+downloading https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.6.2/commons-pool2-2.6.2.jar ...
+	[SUCCESSFUL ] org.apache.commons#commons-pool2;2.6.2!commons-pool2.jar (126ms)
+downloading https://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar ...
+	[SUCCESSFUL ] org.spark-project.spark#unused;1.0.0!unused.jar (120ms)
+downloading https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.4.8-1/zstd-jni-1.4.8-1.jar ...
+	[SUCCESSFUL ] com.github.luben#zstd-jni;1.4.8-1!zstd-jni.jar (879ms)
+downloading https://repo1.maven.org/maven2/org/lz4/lz4-java/1.7.1/lz4-java-1.7.1.jar ...
+	[SUCCESSFUL ] org.lz4#lz4-java;1.7.1!lz4-java.jar (192ms)
+downloading https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.8.2/snappy-java-1.1.8.2.jar ...
+	[SUCCESSFUL ] org.xerial.snappy#snappy-java;1.1.8.2!snappy-java.jar(bundle) (269ms)
+downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar ...
+	[SUCCESSFUL ] org.slf4j#slf4j-api;1.7.30!slf4j-api.jar (135ms)
+downloading https://repo1.maven.org/maven2/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar ...
+	[SUCCESSFUL ] org.checkerframework#checker-qual;3.5.0!checker-qual.jar (163ms)
+:: resolution report :: resolve 10495ms :: artifacts dl 3619ms
+	:: modules in use:
+	com.github.luben#zstd-jni;1.4.8-1 from central in [default]
+	org.apache.commons#commons-pool2;2.6.2 from central in [default]
+	org.apache.kafka#kafka-clients;2.6.0 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.1.2 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.1.2 from central in [default]
+	org.checkerframework#checker-qual;3.5.0 from central in [default]
+	org.lz4#lz4-java;1.7.1 from central in [default]
+	org.postgresql#postgresql;42.3.1 from central in [default]
+	org.slf4j#slf4j-api;1.7.30 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.8.2 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   11  |   11  |   11  |   0   ||   11  |   11  |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-8600ee64-685d-4200-a262-67b5287c2e5e
+	confs: [default]
+	11 artifacts copied, 0 already retrieved (14284kB/50ms)
+25/05/18 09:49:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/05/18 09:50:01 WARN ResolveWriteToStream: Temporary checkpoint location created which is deleted normally when the query didn't fail: /tmp/temporary-d3fc78f4-65b3-414c-ad05-d3c61357ef79. If it's required to delete it under any circumstances, please set spark.sql.streaming.forceDeleteTempCheckpointLocation to true. Important to know deleting temp checkpoint folder is best effort.
+25/05/18 09:50:01 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+25/05/18 09:50:04 WARN NetworkClient: [Consumer clientId=consumer-spark-kafka-source-85d92ade-b110-442d-baec-32affb90f62e--62647449-driver-0-1, groupId=spark-kafka-source-85d92ade-b110-442d-baec-32affb90f62e--62647449-driver-0] Error while fetching metadata with correlation id 2 : {fakestore-products=LEADER_NOT_AVAILABLE}
+25/05/18 09:50:04 WARN NetworkClient: [Consumer clientId=consumer-spark-kafka-source-85d92ade-b110-442d-baec-32affb90f62e--62647449-driver-0-1, groupId=spark-kafka-source-85d92ade-b110-442d-baec-32affb90f62e--62647449-driver-0] Error while fetching metadata with correlation id 4 : {fakestore-products=LEADER_NOT_AVAILABLE}
+25/05/18 09:50:04 WARN NetworkClient: [Consumer clientId=consumer-spark-kafka-source-85d92ade-b110-442d-baec-32affb90f62e--62647449-driver-0-1, groupId=spark-kafka-source-85d92ade-b110-442d-baec-32affb90f62e--62647449-driver-0] Error while fetching metadata with correlation id 5 : {fakestore-products=LEADER_NOT_AVAILABLE}
+25/05/18 09:50:04 WARN NetworkClient: [Consumer clientId=consumer-spark-kafka-source-85d92ade-b110-442d-baec-32affb90f62e--62647449-driver-0-1, groupId=spark-kafka-source-85d92ade-b110-442d-baec-32affb90f62e--62647449-driver-0] Error while fetching metadata with correlation id 7 : {fakestore-products=LEADER_NOT_AVAILABLE}
+25/05/18 09:50:04 WARN NetworkClient: [Consumer clientId=consumer-spark-kafka-source-85d92ade-b110-442d-baec-32affb90f62e--62647449-driver-0-1, groupId=spark-kafka-source-85d92ade-b110-442d-baec-32affb90f62e--62647449-driver-0] Error while fetching metadata with correlation id 9 : {fakestore-products=LEADER_NOT_AVAILABLE}
+[Stage 1:>                                                          (0 + 2) / 2][Stage 2:>                                                          (0 + 1) / 1]                                                                                [Stage 3:>                                                          (0 + 1) / 1]                                                                                [Stage 6:>                                                          (0 + 1) / 1][Stage 7:>                                                          (0 + 2) / 2]                                                                                

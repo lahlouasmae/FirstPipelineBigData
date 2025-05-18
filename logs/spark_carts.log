@@ -1,0 +1,50 @@
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /opt/bitnami/spark/.ivy2/cache
+The jars for the packages stored in: /opt/bitnami/spark/.ivy2/jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+org.postgresql#postgresql added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-210a28b3-2f76-44f0-b76c-4b459ef0a783;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.1.2 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.1.2 in central
+	found org.apache.kafka#kafka-clients;2.6.0 in central
+	found com.github.luben#zstd-jni;1.4.8-1 in central
+	found org.lz4#lz4-java;1.7.1 in central
+	found org.xerial.snappy#snappy-java;1.1.8.2 in central
+	found org.slf4j#slf4j-api;1.7.30 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+	found org.apache.commons#commons-pool2;2.6.2 in central
+	found org.postgresql#postgresql;42.3.1 in central
+	found org.checkerframework#checker-qual;3.5.0 in central
+:: resolution report :: resolve 4466ms :: artifacts dl 131ms
+	:: modules in use:
+	com.github.luben#zstd-jni;1.4.8-1 from central in [default]
+	org.apache.commons#commons-pool2;2.6.2 from central in [default]
+	org.apache.kafka#kafka-clients;2.6.0 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.1.2 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.1.2 from central in [default]
+	org.checkerframework#checker-qual;3.5.0 from central in [default]
+	org.lz4#lz4-java;1.7.1 from central in [default]
+	org.postgresql#postgresql;42.3.1 from central in [default]
+	org.slf4j#slf4j-api;1.7.30 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.8.2 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   11  |   0   |   0   |   0   ||   11  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-210a28b3-2f76-44f0-b76c-4b459ef0a783
+	confs: [default]
+	0 artifacts copied, 11 already retrieved (0kB/55ms)
+25/05/18 09:51:09 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/05/18 09:51:14 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+25/05/18 09:51:29 WARN ResolveWriteToStream: Temporary checkpoint location created which is deleted normally when the query didn't fail: /tmp/temporary-e102664b-aeb8-4d71-b957-5e923078da42. If it's required to delete it under any circumstances, please set spark.sql.streaming.forceDeleteTempCheckpointLocation to true. Important to know deleting temp checkpoint folder is best effort.
+25/05/18 09:51:29 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+25/05/18 09:51:31 WARN NetworkClient: [Consumer clientId=consumer-spark-kafka-source-ea685fa0-01c8-4218-8cb9-22a21e61bd1f--478411996-driver-0-1, groupId=spark-kafka-source-ea685fa0-01c8-4218-8cb9-22a21e61bd1f--478411996-driver-0] Error while fetching metadata with correlation id 2 : {fakestore-carts=LEADER_NOT_AVAILABLE}
+25/05/18 09:51:31 WARN NetworkClient: [Consumer clientId=consumer-spark-kafka-source-ea685fa0-01c8-4218-8cb9-22a21e61bd1f--478411996-driver-0-1, groupId=spark-kafka-source-ea685fa0-01c8-4218-8cb9-22a21e61bd1f--478411996-driver-0] Error while fetching metadata with correlation id 7 : {fakestore-carts=LEADER_NOT_AVAILABLE}
+25/05/18 09:51:31 WARN ConsumerCoordinator: [Consumer clientId=consumer-spark-kafka-source-ea685fa0-01c8-4218-8cb9-22a21e61bd1f--478411996-driver-0-1, groupId=spark-kafka-source-ea685fa0-01c8-4218-8cb9-22a21e61bd1f--478411996-driver-0] The following subscribed topics are not assigned to any members: [fakestore-carts] 
+[Stage 1:>                                                          (0 + 2) / 2]                                                                                [Stage 4:=============================>                             (1 + 1) / 2]                                                                                [Stage 6:>                                                          (0 + 1) / 1]                                                                                [Stage 9:>                                                          (0 + 1) / 1][Stage 10:>                                                         (0 + 2) / 2]                                                                                [Stage 14:>                                                         (0 + 1) / 1]                                                                                
